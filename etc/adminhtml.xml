@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <opsway_actions module="opsway_actions">
+            <title>Action Offers</title>
+            <sort_order>100</sort_order>
+            <children>
+                <actions>
+                    <title>Edit Action Offers</title>
+                    <sort_order>100</sort_order>
+                    <action>opsway_actions/adminhtml_action/list</action>
+                </actions>
+                <labels>
+                    <title>Edit Action Labels</title>
+                    <sort_order>200</sort_order>
+                    <action>opsway_actions/adminhtml_label/list</action>
+                </labels>
+            </children>
+        </opsway_actions>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <opsway_actions translate="title" module="opsway_actions">
+                        <title>Action Offers</title>
+                        <sort_order>100</sort_order>
+                        <children>
+                            <actions>
+                                <title>Edit Action Offers</title>
+                                <sort_order>100</sort_order>
+                            </actions>
+                            <labels>
+                                <title>Edit Action Labels</title>
+                                <sort_order>200</sort_order>
+                            </labels>
+                        </children>
+                    </opsway_actions>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
